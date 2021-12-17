@@ -24,12 +24,12 @@
 
 
     <link rel="icon" type="image/png" href="/theme/img/favicon.png" />
-    <link href="https://blog.datwik.com/" rel="canonical" />
+    <link href="./" rel="canonical" />
 
   <!-- Feed -->
-          <link href="https://blog.datwik.com/feed.rss" type="application/rss+xml" rel="alternate" title="DatWik RSS Feed" />
+          <link href="./feed.rss" type="application/rss+xml" rel="alternate" title="DatWik RSS Feed" />
 
-  <link href="https://blog.datwik.com/theme/css/style.css" type="text/css" rel="stylesheet" />
+  <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
 
 
 
@@ -46,7 +46,7 @@
   <![endif]-->
 
 
-  <link href="https://blog.datwik.com/missing-max.html" rel="canonical" />
+  <link href="./missing-max.html" rel="canonical" />
 
     <meta name="description" content="Why getting more expensive option can be cheaper...">
 
@@ -63,15 +63,15 @@
 <meta property="og:title" content="Missing Max"/>
 <meta property="og:description" content="Why getting more expensive option can be cheaper..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://blog.datwik.com/missing-max.html"/>
+<meta property="og:url" content="./missing-max.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2020-01-27 10:20:00-05:00"/>
 <meta property="article:modified_time" content=""/>
-<meta property="article:author" content="https://blog.datwik.com/author/bespoke-research.html">
+<meta property="article:author" content="./author/bespoke-research.html">
 <meta property="article:section" content="Blog"/>
 <meta property="article:tag" content="cloud"/>
 <meta property="article:tag" content="pricing"/>
-<meta property="og:image" content="https://blog.datwik.com/img/home-bg.png">
+<meta property="og:image" content="./img/home-bg.png">
 
 <!-- Twitter Card -->
 
@@ -86,10 +86,10 @@
   "author": {
     "@type": "Person",
     "name": "Bespoke Research",
-    "url": "https://blog.datwik.com/author/bespoke-research.html"
+    "url": "./author/bespoke-research.html"
   },
-  "image": "https://blog.datwik.com/img/home-bg.png",
-  "url": "https://blog.datwik.com/missing-max.html",
+  "image": "./img/home-bg.png",
+  "url": "./missing-max.html",
   "description": "Why getting more expensive option can be cheaper..."
 }
 </script>
@@ -108,7 +108,7 @@
       <div class="inner">
         <nav id="navigation">
             <span id="home-button" class="nav-button">
-                <a class="home-button" href="https://blog.datwik.com/" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+                <a class="home-button" href="./" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
             </span>
         </nav>
 
@@ -116,7 +116,7 @@
         <time class="post-date" datetime="Mon 27 January 2020">Mon 27 January 2020</time>
         <h1 class="post-title">Missing Max</h1>
         <!-- TODO : Proper class for headline -->
-            <div class="post-cover cover" style="background-image: url('https://blog.datwik.com/img/home-bg.png')">
+            <div class="post-cover cover" style="background-image: url('./img/home-bg.png')">
       </div>
     </header>
 
@@ -133,11 +133,11 @@
 <p><img class="img-fluid"  style="max-height:250px;" src="https://live.staticflickr.com/84/243763191_d3d3a594a5_b.jpg"><br/>
 <span style="font-size:small;"><em>Source: Flickr</em></span></p>
 <p>Initially all the clients were of the cloud providers were given static set of resources, such as 2 virtual CPUs and 2GB of RAM. Over time numbers of studies have shown that full capacity is rarely being utilized by the clients, rather resource utilization is variable - hovering around 30-40%, with sudden bursts separated by long valleys of low activity. So from the perspective of the cloud providers tenants cost can be further reduced by providing computing resources on demand, rather than full capacity that may go unused.</p>
-<p><img class="img-fluid"  style="max-height:250px;" src="https://blog.datwik.com/images/b09/img02_booster.png"><br/>
+<p><img class="img-fluid"  style="max-height:250px;" src="images/b09/img02_booster.png"><br/>
 <span style="font-size:small;"><em>Source: Wikimedia</em></span></p>
 <p>All major cloud providers (AWS, Microsoft Azure, Google Cloud Engine) few years ago introduced so called "Burstable" virtual machines (or instances). In short these virtual computers are expected to stay relatively unused for long periods of time, while occasionally serving high load for short period of time (several minutes per day).</p>
 <p>For the purposes of this article let's look at one of the smallest instance available from AWS EC2: t3.nano. It has 2 virtual CPUs and 0.5GB RAM. Current price for this instance (as of the date of this article) is $0.0052 per hour, which comes down to rougly $3.8 per month (730 hours in one month). So far, so good.</p>
-<p><img class="img-fluid"  style="max-width:250px;" src="https://blog.datwik.com/images/b09/img03_aws_t3.png"><br/>
+<p><img class="img-fluid"  style="max-width:250px;" src="images/b09/img03_aws_t3.png"><br/>
 <span style="font-size:small;"><em>Source: AWS</em></span></p>
 <p>What if you have something a bit more resource heavy? With the price of cup of coffee per month, what if we install a web server or database on this machine - it may be a bit slow, but hey it is cheap - why not try it?</p>
 <p>AWS has a really good documentation explaining the details about t3 instances. It tells you that baseline performance for these instances is 5% of the CPU, they start in unlimited mode - so they can provide you the requests performance as you need more of. Also a bit below general table of EC2 instance prices it tells you that CPU Credits will be charged at the rate of $0.05 per vCPU.
@@ -177,15 +177,15 @@ much better option with significantly more memory or CPU power.</p>
             <section class="post-info">
 
                 <aside class="post-tags">
-                    Tags: <a href="https://blog.datwik.com/tag/cloud.html">cloud</a> | <a href="https://blog.datwik.com/tag/pricing.html">pricing</a>                </aside>
+                    Tags: <a href="./tag/cloud.html">cloud</a> | <a href="./tag/pricing.html">pricing</a>                </aside>
                 <div class="post-share">
-                    <button class="btn btn-sm twitter" onclick="window.open('https://twitter.com/intent/tweet?text=Missing Max&amp;url=https://blog.datwik.com/missing-max.html&amp;hashtags=cloud,pricing,br8ca', 'twitter-share', 'width=550,height=350');">
+                    <button class="btn btn-sm twitter" onclick="window.open('https://twitter.com/intent/tweet?text=Missing Max&amp;url=./missing-max.html&amp;hashtags=cloud,pricing,br8ca', 'twitter-share', 'width=550,height=350');">
                         <i class="fab fa-twitter"></i>
                     </button>
-                    <button class="btn btn-sm facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?text=Missing Max&u=https%3A%2f%2fblog.datwik.com/missing-max.html ', 'facebook-share', 'width=550,height=350');">
+                    <button class="btn btn-sm facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?text=Missing Max&u=./missing-max.html ', 'facebook-share', 'width=550,height=350');">
                         <i class="fab fa-facebook"></i>
                     </button>
-                    <button class="btn btn-sm linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&title=Missing%20Max&url=https%3A%2f%2fblog.datwik.com/missing-max.html ', 'linkedin-share', 'width=550,height=600');">
+                    <button class="btn btn-sm linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&title=Missing%20Max&url=./missing-max.html ', 'linkedin-share', 'width=550,height=600');">
                         <i class="fab fa-linkedin"></i>
                     </button>
                 </div>

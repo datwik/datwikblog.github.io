@@ -24,12 +24,12 @@
 
 
     <link rel="icon" type="image/png" href="/theme/img/favicon.png" />
-    <link href="https://blog.datwik.com/" rel="canonical" />
+    <link href="./" rel="canonical" />
 
   <!-- Feed -->
-          <link href="https://blog.datwik.com/feed.rss" type="application/rss+xml" rel="alternate" title="DatWik RSS Feed" />
+          <link href="./feed.rss" type="application/rss+xml" rel="alternate" title="DatWik RSS Feed" />
 
-  <link href="https://blog.datwik.com/theme/css/style.css" type="text/css" rel="stylesheet" />
+  <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
 
 
 
@@ -46,7 +46,7 @@
   <![endif]-->
 
 
-  <link href="https://blog.datwik.com/excel-vlookup.html" rel="canonical" />
+  <link href="./excel-vlookup.html" rel="canonical" />
 
     <meta name="description" content="We all love spreadsheets, helps us do the calculations. Income, account receivables, expenses - anything you throw at it Excel will...">
 
@@ -65,17 +65,17 @@
 <meta property="og:title" content="Combining data in Excel"/>
 <meta property="og:description" content="We all love spreadsheets, helps us do the calculations. Income, account receivables, expenses - anything you throw at it Excel will..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://blog.datwik.com/excel-vlookup.html"/>
+<meta property="og:url" content="./excel-vlookup.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2019-12-21 10:20:00-05:00"/>
 <meta property="article:modified_time" content=""/>
-<meta property="article:author" content="https://blog.datwik.com/author/bespoke-research.html">
+<meta property="article:author" content="./author/bespoke-research.html">
 <meta property="article:section" content="Blog"/>
 <meta property="article:tag" content="organize"/>
 <meta property="article:tag" content="excel"/>
 <meta property="article:tag" content="data"/>
 <meta property="article:tag" content="productivity"/>
-<meta property="og:image" content="https://blog.datwik.com/img/home-bg.png">
+<meta property="og:image" content="./img/home-bg.png">
 
 <!-- Twitter Card -->
 
@@ -90,10 +90,10 @@
   "author": {
     "@type": "Person",
     "name": "Bespoke Research",
-    "url": "https://blog.datwik.com/author/bespoke-research.html"
+    "url": "./author/bespoke-research.html"
   },
-  "image": "https://blog.datwik.com/img/home-bg.png",
-  "url": "https://blog.datwik.com/excel-vlookup.html",
+  "image": "./img/home-bg.png",
+  "url": "./excel-vlookup.html",
   "description": "We all love spreadsheets, helps us do the calculations. Income, account receivables, expenses - anything you throw at it Excel will..."
 }
 </script>
@@ -112,7 +112,7 @@
       <div class="inner">
         <nav id="navigation">
             <span id="home-button" class="nav-button">
-                <a class="home-button" href="https://blog.datwik.com/" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+                <a class="home-button" href="./" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
             </span>
         </nav>
 
@@ -120,7 +120,7 @@
         <time class="post-date" datetime="Sat 21 December 2019">Sat 21 December 2019</time>
         <h1 class="post-title">Combining data in Excel</h1>
         <!-- TODO : Proper class for headline -->
-            <div class="post-cover cover" style="background-image: url('https://blog.datwik.com/img/home-bg.png')">
+            <div class="post-cover cover" style="background-image: url('./img/home-bg.png')">
       </div>
     </header>
 
@@ -140,32 +140,31 @@ but without NAICS code explanation, which tells you what industry is this busine
 You can always download <a href="https://www.statcan.gc.ca/eng/subjects/standard/naics/2017/index">full list of NAICS codes</a> from Stats Canada and paste it in a separate sheet.</p>
 <p>Fortunately you can easily get two datasets combined into one using handy <a href="https://support.office.com/en-us/article/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1">VLOOKUP</a> function.</p>
 <h6>Businesses</h6>
-<p><img class="img-fluid" src="https://blog.datwik.com/images/b02/img01.png" data-action="zoom" ></p>
+<p><img class="img-fluid" src="images/b02/img01.png" data-action="zoom" ></p>
 <h6>Naics codes</h6>
-<p><img class="img-fluid" src="https://blog.datwik.com/images/b02/img02.png" data-action="zoom" ></p>
+<p><img class="img-fluid" src="images/b02/img02.png" data-action="zoom" ></p>
 <p>If you use the following formula in the cell C2 of the "businesses" sheet, you can get NAICS description conveniently listed next to each business name</p>
 <div class="highlight"><pre><span></span><code><span class="o">=</span><span class="nt">VLOOKUP</span><span class="o">(</span><span class="nt">B2</span><span class="o">,</span> <span class="nt">naics</span><span class="o">!</span><span class="nt">A</span><span class="p">:</span><span class="nd">B</span><span class="o">,</span> <span class="nt">2</span><span class="o">,</span> <span class="nt">FALSE</span><span class="o">);</span>
 </code></pre></div>
 
-
 <p>Don't forget to double click on a small square in the bottom right corner of the cell, so that Excel can apply the formula to all cells in the row.</p>
 <h6>Combined dataset</h6>
-<p><img class="img-fluid" src="https://blog.datwik.com/images/b02/img03.png" data-action="zoom" ></p>
+<p><img class="img-fluid" src="images/b02/img03.png" data-action="zoom" ></p>
 <p>As a side note, this will work same way in Google Sheets as well.</p>
             </section>
 
             <section class="post-info">
 
                 <aside class="post-tags">
-                    Tags: <a href="https://blog.datwik.com/tag/organize.html">organize</a> | <a href="https://blog.datwik.com/tag/excel.html">excel</a> | <a href="https://blog.datwik.com/tag/data.html">data</a> | <a href="https://blog.datwik.com/tag/productivity.html">productivity</a>                </aside>
+                    Tags: <a href="./tag/organize.html">organize</a> | <a href="./tag/excel.html">excel</a> | <a href="./tag/data.html">data</a> | <a href="./tag/productivity.html">productivity</a>                </aside>
                 <div class="post-share">
-                    <button class="btn btn-sm twitter" onclick="window.open('https://twitter.com/intent/tweet?text=Combining data in Excel&amp;url=https://blog.datwik.com/excel-vlookup.html&amp;hashtags=organize,excel,data,productivity,br8ca', 'twitter-share', 'width=550,height=350');">
+                    <button class="btn btn-sm twitter" onclick="window.open('https://twitter.com/intent/tweet?text=Combining data in Excel&amp;url=./excel-vlookup.html&amp;hashtags=organize,excel,data,productivity,br8ca', 'twitter-share', 'width=550,height=350');">
                         <i class="fab fa-twitter"></i>
                     </button>
-                    <button class="btn btn-sm facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?text=Combining data in Excel&u=https%3A%2f%2fblog.datwik.com/excel-vlookup.html ', 'facebook-share', 'width=550,height=350');">
+                    <button class="btn btn-sm facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?text=Combining data in Excel&u=./excel-vlookup.html ', 'facebook-share', 'width=550,height=350');">
                         <i class="fab fa-facebook"></i>
                     </button>
-                    <button class="btn btn-sm linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&title=Combining%20data%20in%20Excel&url=https%3A%2f%2fblog.datwik.com/excel-vlookup.html ', 'linkedin-share', 'width=550,height=600');">
+                    <button class="btn btn-sm linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&title=Combining%20data%20in%20Excel&url=./excel-vlookup.html ', 'linkedin-share', 'width=550,height=600');">
                         <i class="fab fa-linkedin"></i>
                     </button>
                 </div>
