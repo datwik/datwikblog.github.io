@@ -46,7 +46,7 @@
   <![endif]-->
 
 
-  <link href="./drafts/datwik-development-environment-p2.html" rel="canonical" />
+  <link href="./datwik-development-environment-p2.html" rel="canonical" />
 
     <meta name="description" content="Datwik development environment">
 
@@ -64,9 +64,9 @@
 <meta property="og:title" content="Build your own mobile computer (Part 2)"/>
 <meta property="og:description" content="Datwik development environment"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="./drafts/datwik-development-environment-p2.html"/>
+<meta property="og:url" content="./datwik-development-environment-p2.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2021-12-14 10:20:00-05:00"/>
+<meta property="article:published_time" content="2022-05-28 10:20:00-04:00"/>
 <meta property="article:modified_time" content=""/>
 <meta property="article:author" content="./author/bespoke-research.html">
 <meta property="article:section" content="Blog"/>
@@ -83,7 +83,7 @@
   "@type": "Article",
   "name": "Build your own mobile computer (Part 2)",
   "headline": "Build your own mobile computer (Part 2)",
-  "datePublished": "2021-12-14 10:20:00-05:00",
+  "datePublished": "2022-05-28 10:20:00-04:00",
   "dateModified": "",
   "author": {
     "@type": "Person",
@@ -91,7 +91,7 @@
     "url": "./author/bespoke-research.html"
   },
   "image": "./img/home-bg.png",
-  "url": "./drafts/datwik-development-environment-p2.html",
+  "url": "./datwik-development-environment-p2.html",
   "description": "Datwik development environment"
 }
 </script>
@@ -115,7 +115,7 @@
         </nav>
 
 
-        <time class="post-date" datetime="Tue 14 December 2021">Tue 14 December 2021</time>
+        <time class="post-date" datetime="Sat 28 May 2022">Sat 28 May 2022</time>
         <h1 class="post-title">Build your own mobile computer (Part 2)</h1>
         <!-- TODO : Proper class for headline -->
             <div class="post-cover cover" style="background-image: url('./img/home-bg.png')">
@@ -134,10 +134,20 @@
                 <p>Back to the drawing board to clarify requirements:
 - Need a device that can be power the computing device without a car or an outlet
 - When driving in the car, it's too shaky to be able to operate keyboard and mouse separately
-- VS Code should not be closing when switching focus to browser or other program
-($300 laptop could do all that, but we pretend it was not invented yet)</p>
-<p>For the power source, I went for one of the beasts: Anker PowerCore III Elite 25,600 for $150. Having both USB-C and USB-A outputs allows to power both computer and the monitor, and charge can run for multiple hours. Couple downsides: you can't charge it unless you have a powerful adapter - regular 20W phone adapters won't charge it. And unfortunately you cannot charge and use it at the same time - the moment you insert charging cable it stops providing power. Not exactly laptop experience, but good for now - just need to remember to keep it charged.</p>
-<p>Since I heard about Raspberry Pi few years ago I was looking for a cause to try it out. And here you go - got Raspberry Pi 4 Model B 4GB with a case for another $100 or so, connected old Logitech K400r keyboard lying around </p>
+- VS Code should not be closing when switching focus to browser or other program </p>
+<p><em>$300 laptop could do all that, but let's pretend it was not invented yet.</em></p>
+<p>For the power source, I went for one of the beasts: Anker PowerCore III Elite 25,600. Having both USB-C and USB-A outputs allows to power both computer and the monitor, and charge can run for multiple hours. Couple downsides: you can't charge it unless you have a powerful adapter - regular 20W phone adapters won't charge it. And unfortunately you cannot charge and use it at the same time - the moment you insert charging cable it stops providing power. Not exactly laptop experience, but good for now - just need to remember to keep it charged.</p>
+<p><img class="img-fluid"  style="max-height:250px;" src="images/b15/anker.png"><br/></p>
+<p>Since I heard about Raspberry Pi few years ago I was looking for a cause to try it out. And here you go - got <a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi 4 Model B</a> 4GB with a case for another $100 or so</p>
+<p><img class="img-fluid"  style="max-height:250px;" src="images/b15/rpi4.png"><br/></p>
+<p>Connected an old Logitech K400r keyboard lying around. It's not a very convenient keyboard if you are used to full size one, but the fact that it has integrated trackpad makes it usable when you are sitting in the backseat of a moving car. Plus it's wireless via USB dongle which can be attached to the PI.</p>
+<p><img class="img-fluid"  style="max-height:250px;" src="images/b15/k400r.png"><br/></p>
+<p>Finally the screen. USB-C monitor from previous experiment with S9 phone fortunately had a mini-HDMI connector. After finding a micro to mini HDMI converter and a sufficiently long HDMI cable as well as USB-C cable for powering the screen, the setup is complete.</p>
+<p><img class="img-fluid"  style="max-height:250px;" src="images/b15/screen.png"><br/></p>
+<p>The whole PortBerry (TM) lives in an old laptop bag. </p>
+<p><img class="img-fluid"  style="max-height:250px;" src="images/b15/portberry.png"><br/></p>
+<p>Not nearly as neat as a laptop would be, but I was able to make it work by hanging the screen behind the front seat, and working away while on the road (not as a driver of course). RPI has enough power to run VS Code, Firefox and few other things together and powerbank can last many hours. When on the road RPI connects to my mobile via hotspot WIFI, so stackoverflow is always a click away.</p>
+<p>Apart from finding time to build a proper case for this setup, a challenge still remains with RPI termoregulation. RPI is surprisingly sturdy computer, but it gets warm when left in the bag.</p>
             </section>
 
             <section class="post-info">
@@ -145,13 +155,13 @@
                 <aside class="post-tags">
                     Tags: <a href="./tag/development.html">development</a> | <a href="./tag/datwik.html">datwik</a> | <a href="./tag/history.html">history</a>                </aside>
                 <div class="post-share">
-                    <button class="btn btn-sm twitter" onclick="window.open('https://twitter.com/intent/tweet?text=Build your own mobile computer (Part 2)&amp;url=./drafts/datwik-development-environment-p2.html&amp;hashtags=development,datwik,history,br8ca', 'twitter-share', 'width=550,height=350');">
+                    <button class="btn btn-sm twitter" onclick="window.open('https://twitter.com/intent/tweet?text=Build your own mobile computer (Part 2)&amp;url=./datwik-development-environment-p2.html&amp;hashtags=development,datwik,history,br8ca', 'twitter-share', 'width=550,height=350');">
                         <i class="fab fa-twitter"></i>
                     </button>
-                    <button class="btn btn-sm facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?text=Build your own mobile computer (Part 2)&u=./drafts%2fdatwik-development-environment-p2.html ', 'facebook-share', 'width=550,height=350');">
+                    <button class="btn btn-sm facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?text=Build your own mobile computer (Part 2)&u=./datwik-development-environment-p2.html ', 'facebook-share', 'width=550,height=350');">
                         <i class="fab fa-facebook"></i>
                     </button>
-                    <button class="btn btn-sm linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&title=Build%20your%20own%20mobile%20computer%20%28Part%202%29&url=./drafts%2fdatwik-development-environment-p2.html ', 'linkedin-share', 'width=550,height=600');">
+                    <button class="btn btn-sm linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&title=Build%20your%20own%20mobile%20computer%20%28Part%202%29&url=./datwik-development-environment-p2.html ', 'linkedin-share', 'width=550,height=600');">
                         <i class="fab fa-linkedin"></i>
                     </button>
                 </div>

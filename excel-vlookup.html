@@ -144,7 +144,7 @@ You can always download <a href="https://www.statcan.gc.ca/eng/subjects/standard
 <h6>Naics codes</h6>
 <p><img class="img-fluid" src="images/b02/img02.png" data-action="zoom" ></p>
 <p>If you use the following formula in the cell C2 of the "businesses" sheet, you can get NAICS description conveniently listed next to each business name</p>
-<div class="highlight"><pre><span></span><code><span class="o">=</span><span class="nt">VLOOKUP</span><span class="o">(</span><span class="nt">B2</span><span class="o">,</span> <span class="nt">naics</span><span class="o">!</span><span class="nt">A</span><span class="p">:</span><span class="nd">B</span><span class="o">,</span> <span class="nt">2</span><span class="o">,</span> <span class="nt">FALSE</span><span class="o">);</span>
+<div class="highlight"><pre><span></span><code><span class="o">=</span><span class="nt">VLOOKUP</span><span class="o">(</span><span class="nt">B2</span><span class="o">,</span><span class="w"> </span><span class="nt">naics</span><span class="o">!</span><span class="nt">A</span><span class="p">:</span><span class="nd">B</span><span class="o">,</span><span class="w"> </span><span class="nt">2</span><span class="o">,</span><span class="w"> </span><span class="nt">FALSE</span><span class="o">);</span><span class="w"></span>
 </code></pre></div>
 
 <p>Don't forget to double click on a small square in the bottom right corner of the cell, so that Excel can apply the formula to all cells in the row.</p>
